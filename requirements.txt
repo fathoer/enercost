@@ -1,0 +1,20 @@
+# Core GUI
+PyQt6
+pycountry
+
+# Excel and data handling
+pandas
+openpyxl
+
+# Economic data from FRED
+fredapi
+
+# Plotting and interactive charts
+pyqtgraph
+
+# Engineering calculations (ASME factors, etc.)
+numpy
+scipy
+
+# Optional: for .enc serialization (if using JSON or pickle)
+simplejson

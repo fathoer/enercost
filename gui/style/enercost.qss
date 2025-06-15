@@ -1,0 +1,269 @@
+/* ───── Base Styling ───── */
+QWidget {
+    background-color: #F8F9FA;
+    color: #165d32;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+/* ───── QLabel ───── */
+QLabel {
+    padding: 2px;
+    font-size: 11px;
+}
+
+/* ───── QLineEdit & QComboBox ───── */
+QLineEdit, QComboBox, QPlainTextEdit, QSpinBox, QDoubleSpinBox {
+    background: white;
+    border: 1px solid #b1d4c3;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #4caf50;
+}
+/* ───── QPushButton Strong Emphasis Style ───── */
+QPushButton {
+    background-color: #4caf50;  /* strong green */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+}
+
+QPushButton:hover {
+    background-color: #388e3c;  /* darker on hover */
+}
+
+QPushButton:pressed {
+    background-color: #2e7d32;  /* even darker on click */
+}
+
+/* ───── QTabWidget ───── */
+QTabWidget::pane {
+    border: 1px solid #b1d4c3;
+    background: #e7f4ee;
+}
+
+QTabBar::tab {
+    background: #e7f4ee;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    padding: 6px 12px;
+    margin: 2px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-weight: bold;
+}
+
+QTabBar::tab:selected {
+    background-color: #cde7dc;
+    border-bottom: 2px solid #cde7dc;
+}
+
+/* ───── QMenuBar ───── */
+QMenuBar {
+    background-color: #F8F9FA;
+    color: #165d32;
+    font-weight: bold;
+}
+QMenuBar::item:selected {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ───── QMenu ───── */
+QMenu {
+    background-color: white;
+    border: 1px solid #b1d4c3;
+}
+QMenu::item:selected {
+    background-color: #cde7dc;
+}
+
+/* ───── QTableView ───── */
+QTableView {
+    gridline-color: #b1d4c3;
+    selection-background-color: #cde7dc;
+    alternate-background-color: #f0f7f5;
+    border: 1px solid #b1d4c3;
+}
+
+/* ───── Scrollbars ───── */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #e7f4ee;
+    border: none;
+    width: 10px;
+}
+QScrollBar::handle {
+    background: #b1d4c3;
+    border-radius: 4px;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+}
+
+/* ───── Tooltip ───── */
+QToolTip {
+    background-color: #cde7dc;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    padding: 4px;
+}
+
+/* ───── QTextEdit (Multi-line Info box) ───── */
+QTextEdit {
+    background: white;
+    border: 1px solid #b1d4c3;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+QTextEdit:focus {
+    border: 1px solid #4caf50;
+}
+
+/* ───── QDateEdit ───── */
+QDateEdit {
+    background: white;
+    border: 1px solid #b1d4c3;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+QDateEdit:focus {
+    border: 1px solid #4caf50;
+}
+
+/* ───── QComboBox Main Field ───── */
+QComboBox {
+    background-color: white;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+QComboBox:focus {
+    border: 1px solid #4caf50;
+}
+
+/* ───── QComboBox Dropdown Arrow Area ───── */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    background-color: #e7f4ee;  /* very light green */
+    border-left: 1px solid #b1d4c3;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+QComboBox::down-arrow {
+    image: url(gui/resources/icons/down-arrow.svg);
+    width: 16px;
+    height: 16px;
+}
+
+/* ───── QComboBox Dropdown List ───── */
+QComboBox QAbstractItemView {
+    background-color: white;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    border-radius: 6px;
+    padding: 2px;
+    selection-background-color: #cde7dc;
+    selection-color: #165d32;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #e7f4ee;
+    border-radius: 4px;
+}
+
+
+/* ───── QCalendarWidget Down Arrow + Combo Popup ───── */
+QCalendarWidget QToolButton::menu-indicator {
+    image: url(gui/resources/icons/down-arrow.svg);
+    subcontrol-origin: content;
+    subcontrol-position: right center;
+    padding-left: 4px;
+    width: 12px;
+    height: 12px;
+}
+
+/* Consistent calendar menu & scroll styling */
+QCalendarWidget QMenu {
+    background-color: white;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    border-radius: 6px;
+}
+
+QCalendarWidget QAbstractItemView {
+    selection-background-color: #cde7dc;
+    selection-color: #165d32;
+    background-color: white;
+    gridline-color: #b1d4c3;
+    outline: none;
+}
+
+/* ───── QComboBox Dropdown + Completer List ───── */
+QListView {
+    background-color: white;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    selection-background-color: #cde7dc;
+    selection-color: #165d32;
+    padding: 2px;
+}
+/* ───── QScrollBar Styling ───── */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #f5fdf9;
+    border: none;
+    width: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #cde7dc;
+    border-radius: 5px;
+    min-height: 20px;
+}
+QScrollBar::handle:hover {
+    background: #b6dfcb;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+    width: 0;
+    height: 0;
+}
+
+/* ───── QDateEdit Main Field ───── */
+QDateEdit {
+    background-color: white;
+    color: #165d32;
+    border: 1px solid #b1d4c3;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+QDateEdit:focus {
+    border: 1px solid #4caf50;
+}
+
+/* ───── QDateEdit Arrow Button ───── */
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    background-color: #e7f4ee; /* light green background */
+    border-left: 1px solid #b1d4c3;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+QDateEdit::down-arrow {
+    image: url(gui/resources/icons/down-arrow.svg);
+    width: 16px;
+    height: 16px;
+}
