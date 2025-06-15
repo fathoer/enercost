@@ -3,7 +3,7 @@ import os
 from PyQt6.QtWidgets import QApplication, QMainWindow, QStackedWidget
 from PyQt6.QtCore import QSize
 from gui.screens.welcome_screen import WelcomeScreen
-from gui.panels.project_info_panel import ProjectInfoPanel
+from gui.panels.project_info import ProjectInfoPanel
 
 class MainWindow(QMainWindow):
     def __init__(self):
